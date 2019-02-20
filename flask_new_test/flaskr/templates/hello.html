@@ -1,0 +1,12 @@
+<!doctype html>
+{% extends "layout.html" %}
+
+{% block body %}
+<li><a href="{{ url_for('logout') }}">Log Out</a>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello World!</h1>
+{% endif %}
+
+{% endblock %}

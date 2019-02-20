@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+<li><a href="{{ url_for('login') }}">Log In</a>
+
+<form name="register" action="/register" method="post">
+    Username: <input type="text" name="name" /><br>
+    Password: <input type="password" name="password" /><br>
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}
